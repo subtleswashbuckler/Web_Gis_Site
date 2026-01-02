@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Geological Web GIS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+  <!-- AUTH CHECK -->
+  <script src="auth.js"></script>
+  <script>checkAuth();</script>
+
+  <!-- CONTROLS -->
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search rock type">
+
+    <select id="filterSelect">
+      <option value="all">All Rock Types</option>
+      <option value="Granite">Granite</option>
+      <option value="Basalt">Basalt</option>
+    </select>
+
+    <button id="zoomBtn">Zoom to Result</button>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <!-- STATISTICS PANEL -->
+  <div id="stats"></div>
+
+  <!-- MAP -->
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="Geodata.js"></script>
+  <script src="map.js"></script>
+
+</body>
+</html>

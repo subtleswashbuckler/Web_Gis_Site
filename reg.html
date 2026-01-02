@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GeoGIS | Authentication</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<div class="scene">
+  <div class="card" id="card">
+
+    <!-- LOGIN -->
+    <div class="face front">
+      <h2>Welcome Back</h2>
+
+      <form id="loginForm">
+        <input type="email" placeholder="Email" required>
+
+        <div class="password-box">
+          <input type="password" id="loginPwd" placeholder="Password" required>
+          <span onclick="togglePwd('loginPwd')">👁</span>
+        </div>
+
+        <button>Login</button>
+      </form>
+
+      <p class="switch" onclick="flipCard()">Create account →</p>
+    </div>
+
+    <!-- SIGNUP -->
+    <div class="face back">
+      <h2>Create Account</h2>
+
+      <form id="signupForm">
+
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="+1234567890" required>
+
+        <div class="password-box">
+          <input type="password" id="signupPwd" placeholder="Password" required>
+          <span onclick="togglePwd('signupPwd')">👁</span>
+
+
+        </div>
+
+        
+        <button>Sign Up</button>
+      </form>
+
+      <p class="switch" onclick="flipCard()">← Back to login</p>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="auth.js"></script>
+</body>
+</html>

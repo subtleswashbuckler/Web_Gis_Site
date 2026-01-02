@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* MAP */
+#map {
+  height: 100vh;
+  width: 100%;
+}
+
+/* CONTROLS */
+.controls {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  z-index: 1000;
+  background: white;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+.controls input,
+.controls select,
+.controls button {
+  width: 200px;
+  margin-bottom: 6px;
+  padding: 5px;
+}
+
+/* STATS */
+#stats {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  z-index: 1000;
+  background: white;
+  padding: 10px;
+  font-size: 14px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  border-color: aqua;
+}
+
+/* LEGEND */
+.legend {
+  background: white;
+  padding: 10px;
+  line-height: 18px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+}
+
+
+
+
+/* PARTICLE CANVAS */
+#particles {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+/* 3D SCENE */
+.scene {
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 200px;
+}
+
+/* CARD */
+.card {
+  width: 360px;
+  height: 420px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+/* CARD FACES */
+.face {
+  position: absolute;
+  inset: 0;
+  padding: 40px;
+  background: white;
+  backdrop-filter: blur(25px);
+  border-radius: 20px;
+  box-shadow: 0 30px 60px hsla(32, 91%, 58%, 0.829);
+  color: white;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+/* INPUTS */
+input {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border: 2px solid;
+  border-color: blanchedalmond;
+  border-radius: 450px;
+  outline: black;
+}
+
+.password-box {
+  position: relative;
+}
+
+.password-box span {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #f2c600, #e63a05);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* SWITCH */
+.switch {
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #f28100;
+}
+
+.divider {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.divider span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  background: white;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: all 0.3s ease;
+}
+
+.social img {
+  width: 20px;
+}
+
+.social:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+
+
+/* MOBILE FALLBACK */
+@media (max-width: 600px) {
+  .card {
+    transform: none !important;
+  }
+  .scene {
+    perspective: none;
+  }
+}
