@@ -17,6 +17,7 @@ A web-based Geographic Information System (GIS) application for visualizing and 
 - CSS3
 - JavaScript (ES6)
 - Leaflet.js
+-  GeoJSON
 
 
 ## 🗺️ Data Sources
@@ -24,7 +25,14 @@ A web-based Geographic Information System (GIS) application for visualizing and 
 
 
 ## 🚀 Getting Started (Run Locally)
+## Live Demo
+(Coming Soon)
+
+## Author
+Saviour Nwibari Koki
 
 1. Clone the repository:
 ```bash
 git clone subtleswashbuckler/Web_Gis_Site.git
+
+
