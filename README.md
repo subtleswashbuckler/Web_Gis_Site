@@ -22,6 +22,10 @@ A web-based Geographic Information System (GIS) application for visualizing and 
 
 ## 🗺️ Data Sources
 - OpenStreetMap (base map)
+## 📄 Case Study
+Detailed project case study available on Notion:
+
+https://www.notion.so/Web-Based-Geological-Information-System-Web-GIS-2b49759f3618809e8f7beeb31f2afd7c?source=copy_link
 
 
 ## 🚀 Getting Started (Run Locally)
